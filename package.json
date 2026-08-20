@@ -1,0 +1,38 @@
+{
+  "name": "telegram-ecard-wallet-management-bot",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Production-ready Persian Telegram Ecard & Wallet Management Bot for Railway.",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/src/index.js",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "prisma:validate": "prisma validate",
+    "prisma:generate": "prisma generate",
+    "prisma:migrate": "prisma migrate deploy"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@grammyjs/types": "^3.25.0",
+    "@prisma/client": "^6.15.0",
+    "dotenv": "^17.2.1",
+    "fastify": "^5.4.0",
+    "grammy": "^1.38.4",
+    "pino": "^9.9.0",
+    "qrcode": "^1.5.4",
+    "zod": "^4.0.17",
+    "prisma": "^6.15.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.2.1",
+    "@types/qrcode": "^1.5.5",
+    "tsx": "^4.19.2",
+    "typescript": "^5.9.2",
+    "vitest": "^3.2.4"
+  }
+}
